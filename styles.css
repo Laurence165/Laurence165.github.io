@@ -1,0 +1,63 @@
+html,body{
+    
+    font-family:'Gill Sans';
+    background-color: red;
+}
+
+header {
+    background-color:crimson;
+    color:beige;
+    text-align: center;
+    font-size: 30px;
+}
+nav,a{
+    text-decoration: none;
+    
+}
+a:hover {
+    color:aqua;
+}
+
+section {
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#about {
+    background-color:chocolate;
+}
+
+#hobbies {
+    background-color:brown;
+}
+
+#contact{
+    background-color:coral;
+}
+
+
+li {
+    font-style: italic;
+    border: 2px solid black;
+    margin: 1px;
+    background-color: green;
+}
+
+
+
+input{
+    margin:5px;
+    
+}
+input[type=message]{
+    
+    width: 300px;
+    height:50px;
+    
+  }
+
+footer {
+    text-align: center;
+    background-color:cornflowerblue;
+}
