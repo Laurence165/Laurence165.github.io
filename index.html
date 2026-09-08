@@ -1,56 +1,319 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Laurence Liu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurence Liu — Product Engineer</title>
+    <meta name="description" content="Laurence Liu is a Computer Science graduate from the University of Toronto, building products across frontend, backend, and systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>L</text></svg>">
 </head>
 <body>
+    <header class="site-header">
+        <a class="wordmark" href="#top">Laurence Liu</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<header> 
-    <h1>Laurence Liu</h1>
-    <nav>
-    <a href="#about">About Me</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <main id="top">
+        <section class="hero">
+            <p class="eyebrow">University of Toronto · Computer Science</p>
+            <h1>Building reliable products from the interface down to the system.</h1>
+            <p class="lede">
+                I'm Laurence — a product engineer who ships frontend, backend, and systems work.
+                Recently at Hubio Technology, I cut client onboarding from two weeks to a few days
+                and kept production insurance software running smoothly.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#experience">See my work</a>
+                <a class="btn btn-ghost" href="mailto:laurenceliu.liu@mail.utoronto.ca">Email me</a>
+            </div>
+            <ul class="hero-meta">
+                <li>Toronto, ON</li>
+                <li>English · Mandarin</li>
+                <li>
+                    <a href="https://github.com/Laurence165" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    ·
+                    <a href="https://www.linkedin.com/in/laurence-liu-745616230" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+            </ul>
+        </section>
 
-<section id = "about">
-    <h2>ABOUT</h2>
-    <p>
-        Hi, My name is Laurence. My background is Taiwanese and one intersting thing about me is that I have 3 siblings.
-    </p>
-</section>
-<section id = "hobbies">
-    <h2>HOBBIES</h2>
-    <ul>
-        <li>
-            Dance - I've been break dancing for 8 years and started the UTM Breaking Club.
-        </li>
-        <li>
-            Skiing - I love skiing in the winter. I use to live in British Columbia and would often going skiing with my family. 
-        </li>
-        <li>
-            Board Games - I like playing board games with friends and family. A game I've played recently is Catan. 
-        </li>
-    </ul>
-</section>
-<section id = "contact" >
-    <h2>CONTACT</h2>
-    <a href="mailto:laurenceliu.liu@mail.utoronto.ca">Email Me!</a>
-    <form >
-        Name: <br>
-        <input type="text" id="username" name="username"><br>
-        Email: <br>
-        <input type="email" name="email"><br>
-        Message: <br>
-        <input type="message" name="message"><br>
-        <input type="submit" value="SEND">
-      </form>
-</section>
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>A systems-minded builder with a creative streak.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>
+                        I graduated from the University of Toronto Mississauga with a Bachelor of Science
+                        in Computer Science and a minor in Mathematics. I like work that sits between
+                        people and infrastructure — APIs, dashboards, compilers, and the messy production
+                        issues that appear once real users show up.
+                    </p>
+                    <p>
+                        My family is from Taiwan, one of four siblings, and I still spend a lot of time moving —
+                        breakdancing for eight years, founding the UTM Breaking Club, and skiing whenever
+                        winter cooperates. Off the computer I am usually at a board-game table. Catan is
+                        a recent favourite.
+                    </p>
+                    <div class="education-card">
+                        <p class="card-kicker">Education</p>
+                        <h3>University of Toronto Mississauga</h3>
+                        <p>B.Sc. Computer Science, Minor in Mathematics · June 2026</p>
+                        <ul class="plain-list">
+                            <li>CGPA 3.41 · Dean's List Scholar</li>
+                            <li>Senior Technical Associate, UofT FinTech Club</li>
+                            <li>Coursework in systems programming, web development, compilers, and information security</li>
+                        </ul>
+                    </div>
+                </div>
+                <aside class="skills-panel">
+                    <p class="card-kicker">Technical skills</p>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Vue.js</li>
+                        <li>Node.js</li>
+                        <li>SQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>AWS</li>
+                        <li>Docker</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                        <li>CI/CD</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                    <div class="hobby-note">
+                        <p class="card-kicker">Away from the keyboard</p>
+                        <p>Breaking · Skiing · Board games</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-<footer>
-    &copy; 2024 Laurence Liu
-</footer>
+        <section id="experience" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Work Experience</p>
+                <h2>Roles where I shipped, diagnosed, and made things faster.</h2>
+            </div>
+
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-meta">
+                        <p class="when">May 2025 — Jan 2026</p>
+                        <p class="where">Toronto, ON</p>
+                    </div>
+                    <article class="role-card">
+                        <p class="role">Product Engineer</p>
+                        <h3>Hubio Technology</h3>
+                        <p class="role-summary">
+                            Worked on Sandbox Auto, an insurance quoting platform, across frontend,
+                            backend, and production operations.
+                        </p>
+                        <ul>
+                            <li>Resolved client and backend production issues by tracing logs, runtime behavior, and system data to the root cause.</li>
+                            <li>Designed an AWS S3 configuration architecture that externalized client data and cut onboarding from two weeks to 2–3 days.</li>
+                            <li>Maintained REST and SOAP APIs that retrieve third-party credit data for driver evaluation, working with JSON and XML payloads.</li>
+                            <li>Built a PostgreSQL and MongoDB caching layer for driver data to reduce third-party API calls and improve performance.</li>
+                            <li>Containerized services with Docker and deployed to AWS ECR and ECS, including task definitions, environment variables, and networking.</li>
+                            <li>Wrote Python automation to parse driver data from PDFs and feed downstream validation workflows.</li>
+                        </ul>
+                        <ul class="tag-row">
+                            <li>Angular</li>
+                            <li>Node.js</li>
+                            <li>AWS</li>
+                            <li>Docker</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Python</li>
+                        </ul>
+                    </article>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-meta">
+                        <p class="when">Apr 2024 — Aug 2024</p>
+                        <p class="where">Toronto, ON</p>
+                    </div>
+                    <article class="role-card">
+                        <p class="role">Front-end Developer Intern</p>
+                        <h3>BreakKonnect</h3>
+                        <p class="role-summary">
+                            Helped event organizers and thousands of dancers find their way through the platform.
+                        </p>
+                        <ul>
+                            <li>Built a responsive event-guide page with Vue.js, TypeScript, and HTML/CSS as part of a four-person team. The page is emailed to organizers and now helps 5,000+ users navigate BreakKonnect.</li>
+                            <li>Created a Python QR-code generator that issues unique codes for each event so attendees can open event pages instantly.</li>
+                            <li>Used BugSnag to identify and resolve over 80% of unhandled production errors.</li>
+                        </ul>
+                        <ul class="tag-row">
+                            <li>Vue.js</li>
+                            <li>TypeScript</li>
+                            <li>HTML/CSS</li>
+                            <li>Python</li>
+                        </ul>
+                    </article>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-meta">
+                        <p class="when">Jan 2024 — Apr 2024</p>
+                        <p class="where">Toronto, ON</p>
+                    </div>
+                    <article class="role-card">
+                        <p class="role">Full-stack Developer Intern</p>
+                        <h3>Anutio</h3>
+                        <p class="role-summary">
+                            Connected social platforms to live analytics so users could see what was happening now, not last week.
+                        </p>
+                        <ul>
+                            <li>Integrated Facebook and Instagram APIs through 20+ secure endpoints that retrieve real-time user analytics.</li>
+                            <li>Built REST APIs that power live visualizations and interactive dashboards.</li>
+                            <li>Documented backend and frontend behavior with clear comments, docstrings, and technical specifications.</li>
+                        </ul>
+                        <ul class="tag-row">
+                            <li>REST APIs</li>
+                            <li>Facebook API</li>
+                            <li>Instagram API</li>
+                        </ul>
+                    </article>
+                </li>
+            </ol>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Project Experience</p>
+                <h2>Recent Projects I have Completed</h2>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <p class="project-index">01</p>
+                    <p class="card-kicker">Mar 2026 · C, Compiler Design</p>
+                    <h3>CiviC Compiler</h3>
+                    <p>A C like compiler.</p>
+                    <ul>
+                        <li>Implemented lexical, syntactic, and semantic analysis.</li>
+                        <li>Developed compiler passes for type checking, context analysis, and AST transformations (e.g., boolean and initialization
+                            lowering).</li>
+                        <li>Generated bytecode for the Civic Virtual Machine.</li>
+                        <li>Verified behavior with valid, invalid, and edge-case programs across parse, semantics, and codegen.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-index">02</p>
+                    <p class="card-kicker">Nov 2025 · C, Linux, File Systems</p>
+                    <h3>ext2 File System Tools</h3>
+                    <p>Low-level tools for an ext2-formatted virtual disk — copy, link, delete, restore, and repair.</p>
+                    <ul>
+                        <li>Implemented copy, directory creation, hard and symbolic links, deletion, and restoration.</li>
+                        <li>Worked directly with inodes, data blocks, allocation bitmaps, and directory entries.</li>
+                        <li>Built a consistency checker that detects and repairs metadata and bitmap mismatches.</li>
+                        <li>Debugged with GDB and compared raw disk images using xxd and diff.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-index">03</p>
+                    <p class="card-kicker">Nov 2025 · React, TypeScript, Node, Docker</p>
+                    <h3>FlyNext</h3>
+                    <p>A hotel and flight booking web app with auth, roles, and a containerized AWS deployment.</p>
+                    <ul>
+                        <li>Designed Node.js/Express REST APIs and integrated third-party flight search, tested in Postman.</li>
+                        <li>Added JWT authentication and role-based access for travelers and hotel owners.</li>
+                        <li>Built booking flows in React and TypeScript with client-side routing and state management.</li>
+                        <li>Modeled users, bookings, and listings in PostgreSQL, then deployed services to AWS ECS with Docker.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-index">04</p>
+                    <p class="card-kicker">Apr 2024 · C, Bash</p>
+                    <h3>Multiplayer Server</h3>
+                    <p>A concurrent multiplayer game server that keeps many clients in sync over TCP.</p>
+                    <ul>
+                        <li>Handled concurrent client connections with POSIX sockets on a TCP server written in C.</li>
+                        <li>Implemented matchmaking, connection handling, data transmission, and I/O multiplexing across multiple connections.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-index">05</p>
+                    <p class="card-kicker">Nov 2023 · Java, JavaFX, Git, Google Cloud APIs</p>
+                    <h3>Pokemon RPG</h3>
+                    <p>An immersive Pokemon game with exploration, NPCs, catching, and gym battles — delivered in six weeks.</p>
+                    <ul>
+                        <li>Followed OOP principles so players can explore areas, talk to characters, catch Pokemon, and fight gym battles.</li>
+                        <li>Designed UML and CRC diagrams and applied the singleton, observer, and mediator patterns.</li>
+                        <li>Used agile practices, scrum meetings, and user stories to ship the application in six weeks.</li>
+                        <li>Built a JavaFX GUI with accessibility features, including screen-reader support.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-index">06</p>
+                    <p class="card-kicker">Hackathon · React, TypeScript, Python, Gemini</p>
+                    <h3>EchoMind</h3>
+                    <p>Journaling helps the mind. Art soothes the heart. Music heals the soul. EchoMind does all three.</p>
+                    <ul>
+                        <li>Built an AI-powered voice journal that turns spoken reflections into art, music, affirmations, and creative prompts.</li>
+                        <li>Used Google Cloud speech-to-text and Gemini to detect emotion, then generate artwork and sound that match the mood.</li>
+                        <li>Added a journal calendar so people can track emotional well-being over time.</li>
+                        <li>Shipped a React and TypeScript frontend with a Python backend, containerized in Docker.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Let's build something together.</h2>
+            </div>
+            <div class="contact-copy">
+                <p>
+                    I'm open to product engineering, full-stack, and systems roles.
+                    The fastest way to reach me is email.
+                </p>
+                <a class="contact-email" href="mailto:laurenceliu.liu@mail.utoronto.ca">
+                    laurenceliu.liu@mail.utoronto.ca
+                </a>
+                <div class="contact-links">
+                    <a href="https://github.com/Laurence165" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/laurence-liu-745616230" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Laurence Liu</p>
+        <p>Built by a Laurence Liu with pure HTML, CSS and Typescript. Designed and built as a personal portfolio.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
